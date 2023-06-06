@@ -1,5 +1,7 @@
 import './App.css';
+import Button from './components/Button';
 import Greet from './components/Greet';
+import Input from './components/Input';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
 import Status from './components/Status';
@@ -24,12 +26,22 @@ function App() {
       lastName: 'Agboola'
     }
   ]
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>, id: number) => {
+    console.log('Button clicked', event, id)
+  }
+
+   const handleChange = (event: React.ChangeEvent<HTMLInputElement> ) => {
+    console.log(event)
+  }
   return (
     <div className="App">
       <Greet name="Mike" messageCount={100} isLoggedIn={false} />
       <Person name={name}/>
       <PersonList names={names}/>
       <Status status="success" />
+      <Button handleClick={handleClick}/>
+      <br />
+      <Input handleChange={handleChange} value=''/>
     </div>
   );
 }

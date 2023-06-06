@@ -1,5 +1,6 @@
 import './App.css';
 import Button from './components/Button';
+import Container from './components/Container';
 import Greet from './components/Greet';
 import Input from './components/Input';
 import Person from './components/Person';
@@ -42,6 +43,7 @@ function App() {
       <Button handleClick={handleClick}/>
       <br />
       <Input handleChange={handleChange} value=''/>
+      <Container styles={{border: "4px solid red", fontSize: "32px", margin: "0 100px"}} />
     </div>
   );
 }

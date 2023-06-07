@@ -9,6 +9,7 @@ import Status from './components/Status';
 import LoggedIn from './components/state/LoggedIn';
 import User from './components/state/User';
 import Assertion from './components/state/Assertion';
+import Reducer from './components/state/Reducer';
 
 function App() {
   const name = {
@@ -50,6 +51,7 @@ function App() {
       <LoggedIn />
       <User />
       <Assertion />
+      <Reducer />
     </div>
   );
 }

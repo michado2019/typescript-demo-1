@@ -6,6 +6,7 @@ import Input from './components/Input';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
 import Status from './components/Status';
+import LoggedIn from './components/state/LoggedIn';
 
 function App() {
   const name = {
@@ -44,6 +45,7 @@ function App() {
       <br />
       <Input handleChange={handleChange} value=''/>
       <Container styles={{border: "4px solid red", fontSize: "32px", margin: "0 100px"}} />
+      <LoggedIn />
     </div>
   );
 }

@@ -8,6 +8,7 @@ import PersonList from './components/PersonList';
 import Status from './components/Status';
 import LoggedIn from './components/state/LoggedIn';
 import User from './components/state/User';
+import Assertion from './components/state/Assertion';
 
 function App() {
   const name = {
@@ -48,6 +49,7 @@ function App() {
       <Container styles={{border: "4px solid red", fontSize: "32px", margin: "0 100px"}} />
       <LoggedIn />
       <User />
+      <Assertion />
     </div>
   );
 }
